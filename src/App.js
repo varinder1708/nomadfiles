@@ -1,9 +1,16 @@
 
-import Layout from './components/Layout/Layout';
+import Layout from './components/PageLayout/Layout';
+import BasicStack from './components/BasicStack/BasicStack';
+import BasicGrid  from './components/BasicGrid/BasicGrid';
+
+
+
+
 function App() {
   return (
     <Layout>
-      body
+      <BasicGrid></BasicGrid>
+      <BasicStack></BasicStack>
     </Layout>
 
   );
