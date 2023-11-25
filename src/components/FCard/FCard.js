@@ -5,20 +5,24 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 
+
 import Typography from "@mui/material/Typography";
 
 
-const FCard = () => {
+const FCard = ({ theme }) => {
+  //theme values->Stack,Grid passed from basicgrid and basicstack
+
   return (
-    <Card variant={'plain'}  >
+    <Card variant={'plain'} sx={{ border: theme === "Grid" ? '1px solid #eeeeee' : '' }} >
       <CardActionArea>
         <CardMedia
-        component="img"
+
+          component="img"
           image={"https://material-ui.com/static/images/cards/contemplative-reptile.jpg"}
           title="Contemplative Reptile"
-          height="340"
+          //height={theme === "Grid" ? "200" : "400"}
           maxwidth="100%"
-          //sx={{ padding: "1em 1em 0 1em",}}
+
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -30,14 +34,12 @@ const FCard = () => {
           </Typography>
         </CardContent>
       </CardActionArea>
-      {/* <CardActions>
+      <CardActions>
         <Button size="small" color="primary">
-          Share
+          Read More
         </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions> */}
+
+      </CardActions>
     </Card >
   )
 }
