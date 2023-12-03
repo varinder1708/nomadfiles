@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 
 const drawerWidth = 240;
@@ -71,9 +72,11 @@ export default function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
+               <Link to={item.toLowerCase()}>
               <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+               {item}
               </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
