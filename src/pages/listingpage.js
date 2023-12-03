@@ -5,12 +5,10 @@ import { useEffect } from 'react';
 
 function Listingpage() {
   useEffect(() => {
-//alert(data)
-//alert(heading)
-
   }, []);
+
   return (<>
-    <BasicGrid3Cols  />
+    <BasicGrid3Cols />
   </>)
 
 }

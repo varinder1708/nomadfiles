@@ -8,10 +8,10 @@ import CustomRoutes from './common/CustomRoutes';
 
 function App() {
   return (
-    
+
     <>
       <Layout>
-      <CustomRoutes/>  
+        <CustomRoutes />
         {/* <BasicGrid3Cols /> */}
         {/* <BasicGrid4Cols /> */}
         {/* <BasicStack></BasicStack> */}
