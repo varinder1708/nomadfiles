@@ -8,8 +8,10 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
-import { data, heading } from '../../data/goabeacheswithdesc';
-const BasicGrid3Cols = () => {
+
+
+
+const BasicGrid3Cols = ({ heading="", data= [], path='' }) => {
 
     return (<Container maxWidth="lg" sx={{ paddingTop: 3, paddingBottom: 3, marginLeft: 0 }} >
         <Typography variant="h4" sx={{ fontWeight: 800, paddingBottom: 3 }}>
@@ -22,8 +24,8 @@ const BasicGrid3Cols = () => {
                         <CardActionArea>
                             <CardMedia
                                 sx={{ height: 240 }}
-                                image={card.image}
-                                title="Contemplative Reptile"
+                                image={`${path}${card.image}`}
+                                title={`${card.name}`}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">

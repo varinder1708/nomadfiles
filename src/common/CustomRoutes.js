@@ -8,7 +8,7 @@ function CustomRoutes() {
             <Route exact path="/" element={<>Landingpage</>} />
             <Route exact path="/home" element={<>Home</>} />
             <Route exact path="/about" element={<>About</>} />
-            <Route exact path="/beaches-in-goa" element={<Listingpage/>} />
+            <Route exact path="/:category/:subcategory" element={<Listingpage/>} />
         </Routes>
     );
 }

@@ -18,7 +18,7 @@ const CoverImage = () => {
 
                 }}
             >
-                <Box>React Blog</Box>
+                <Box>Goa</Box>
             </Box>
     )
 }
